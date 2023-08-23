@@ -23,7 +23,7 @@ Paste the SDDL string surrounded in quotes as an argument to the script.
 For example:
 
 
-![usage](https://github.com/DanielIsaev/SDDL_Converter/blob/main/img/usage.png)
+![usage](https://github.com/DanielIsaev/SDDL_Converter/blob/main/img/usage-01.png)
 
 
 ## Contributing                           
