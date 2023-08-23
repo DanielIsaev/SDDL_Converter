@@ -3,7 +3,7 @@
 import sys 
 
 if len(sys.argv) != 2:
-    print(f'Usage {sys.argv[0]} <security_descriptor>')
+    print(f'Usage {sys.argv[0]} <sddl_string>')
     sys.exit()
 
 
