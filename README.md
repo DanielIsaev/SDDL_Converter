@@ -15,7 +15,7 @@ Or simply download the script manually.
 `./sddl_convert.py <sddl_string>`
 
 For example:
-![usage]()
+![usage](https://github.com/DanielIsaev/SDDL_Converter/blob/main/img/usage.png)
 
 
 ## Contributing                           
