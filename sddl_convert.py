@@ -94,10 +94,12 @@ _trustees = {
 
 sddl = sys.argv[1]
 
+# Check if the strings begins with 'D:' for DACL
 if not sddl.startswith('D:'):
     print('\nThis is not a DACL string, it should start with "D:"')
     sys.exit()
 
+# Identify any SACL in the input and remove them. We mainly care about the DACL portion
 if 'S:' in sddl:
     sacl = sddl[sddl.find('S:'):]
     sddl = sddl[:sddl.find('S:')]
@@ -106,7 +108,6 @@ if 'S:' in sddl:
     print('has not been accounted for.')
 
 # Split the DACL string into seperate, even entries.
-
 entries = sddl.split(')(')
 entries[0] = entries[0][3:]            # Clean up the first entry
 entries[-1] = entries[-1][:-1]         # Clean up the last entry
@@ -119,10 +120,10 @@ for entry in entries:
     else:
         action = 'Denied'
 
-    trustee = entry.find(';;;')
+    trustee = entry.find(';;;') 
     
     perms = entry[3:trustee]
-    perms = [perms[i:i + 2] for i in range(0, len(perms), 2)]
+    perms = [perms[i:i + 2] for i in range(0, len(perms), 2)] # Split the permissions into sets of two characters
 
     trustee = entry[entry.rfind(';')+1:]
     
