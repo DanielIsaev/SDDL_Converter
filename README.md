@@ -14,7 +14,7 @@ Or simply download the script manually.
 
 ## Usage 
 
-Simply paste the SDDL strings souranded in quotes as an argument to the script. 
+Simply paste the SDDL strings surrounded in quotes as an argument to the script. 
 
 ```bash
 ./sddl_convert.py "<sddl_string>"
