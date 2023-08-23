@@ -6,7 +6,7 @@ the permission information to the service. If any SACL strings are present they 
 
 Also, there is no support for conditional SDDL strings, they will simply break the code. 
 
-## Installtion
+## Installation
 
 Run: 
 
