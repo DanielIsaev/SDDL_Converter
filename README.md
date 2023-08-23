@@ -5,7 +5,9 @@ A quick Python script to convert SDDL strings into English.
 
 Run: 
 
-`wget https://github.com/DanielIsaev/SDDL_Converter`
+```bash
+wget https://github.com/DanielIsaev/SDDL_Converter
+```
 
 Or simply download the script manually. 
 
